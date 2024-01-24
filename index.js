@@ -6,7 +6,7 @@ let sequenceNumber = 1;
 
 function handleFileChange(event) {
   const files = event.target.files;
-  for (let i = 0; i < files.length && i < 1000; i++) { // Limit to 200 files
+  for (let i = 0; i < files.length && i < 1000; i++) { // Limit to 1000 files
     const fileName = files[i].name;
     fileNames.innerHTML += `${sequenceNumber++}. ${fileName}<br>`;
   }
